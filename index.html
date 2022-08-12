@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://use.fontawesome.com/f3acda4846.js"></script> -->
+    <!-- <script
+      src="https://kit.fontawesome.com/033f63a742.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharps"
+      rel="stylesheet"
+    />
+
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <i class="fa fa-angle-down" aria-hidden="true" id="logo"></i>
+      <p>Hip-Hop</p>
+      <p id="dots">
+        <i class="fa fa-circle dot" aria-hidden="true"></i>
+        <i class="fa fa-circle dot" aria-hidden="true"></i>
+        <i class="fa fa-circle dot" aria-hidden="true"></i>
+      </p>
+    </header>
+    <main>
+      <h4 id="title">Title</h4>
+      <p id="artist">Artist Name</p>
+      <div class="audio_img">
+        <img src="./imgs/Fireboy-DML-Playboy.jpeg" alt="" id="audio_img" />
+      </div>
+      <div class="duration">
+        <input
+          type="range"
+          name="current_time"
+          id="current_time"
+          value="0"
+          max="100"
+        />
+      </div>
+      <div class="top_controls">
+        <button id="music"><i class="fa fa-music"></i></button>
+        <button id="prev">
+          <i class="fa fa-step-backward" aria-hidden="true"></i>
+        </button>
+        <button id="play">
+          <i class="fa fa-play-circle" aria-hidden="true"></i>
+        </button>
+        <button id="next">
+          <i class="fa fa-step-forward" aria-hidden="true"></i>
+        </button>
+        <button id="favourite">
+          <i class="fa fa-heart" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="bottom_controls">
+        <button id="shuffle">
+          <i class="fa fa-random" aria-hidden="true"></i>
+        </button>
+        <button id="list">
+          <i class="fa fa-list-ul" aria-hidden="true"></i>
+        </button>
+        <button id="volume">
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
+        </button>
+        <input type="range" value="20" min="0" max="100" />
+        <button id="repeat">
+          <span class="material-icons-round"> repeat </span>
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
